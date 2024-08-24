@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página inicial</a></li>
+                    
+                </ul>
+            </nav>
+    </header>
+    <section class="login">
+        <h1>Registrar</h1>
+        <form action="add_user.php" method="POST">
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" placeholder="Usuário" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Senha" required>
+            <button type="submit" class="btn btn-primary btn-large">Registrar</button>
+        </form>
+    </section>
+</body>
+</html>

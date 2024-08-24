@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bem-vindo a nossa plataforma!</h1>
+            <p>Aqui você dar sua opnião, ser ouvido e acompanhar outras ideias.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página inicial</a></li>
+                    <li><a style="color:rgb(9, 255, 0)" href="sobre.html">O que somos?</a></li>
+                    <li><a href="register.html">Registrar</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a style="color: rgb(252, 0, 0);" href="comentarios.html">Comentários</a></li>
+            </nav>
+            
+        </div>
+    </header>
+
+    <section class="login">
+        <h1>Faça Login para começar a escrever</h1>
+        <form action="login.php" method="post">
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <input type="password" name="password" placeholder="Sua senha" required>
+            <button type="submit" class="btn btn-primary btn-large">Entrar</button>
+            <p><a href="register.html">Não tem conta? Registre-se</a></p>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nome da nossa plataforma. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

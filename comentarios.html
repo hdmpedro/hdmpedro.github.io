@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página incial</a></li>
+                <li><a style="color: gold;" href="add_comment.html">Adicionar Comentário</a></li>
+                <li><a style="color: chartreuse;" href="show_comments.php">Mostrar Comentários</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="comment-form">
+            <h2 class="comment-form h2">Deixe seu Comentário</h2>
+            <form action="add_comment.php" method="post">
+                <textarea name="comentario" placeholder="Digite seu comentário aqui" rows="4" required></textarea>
+                <button type="submit" class="comment-form button">Enviar Comentário</button>
+            </form>
+        </section>
+        <section id="commentSection">
+            <?php include 'show_comments.php'; ?>
+        </section>
+    </main>
+</body>
+</html>
